@@ -1,21 +1,86 @@
-<<<<<<< HEAD
-# Autonomous-Drone-management-and-Rule-Violation-System
-Developed a full-stack Drone Airspace Management System using Flask, React, and MySQL to monitor drone operations. Implemented real-time violation detection based on altitude and restricted zones, with automated logging. Built interactive dashboards and APIs for managing drones, flights, operators, and risk analysis.
-=======
-# React + Vite
+##Autonomous Drone Management and Airspace Rule Violation Detection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Autonomous Drone Management and Airspace Rule Violation Detection System is an intelligent platform designed to monitor, manage, and regulate drone activities in controlled airspace. The system helps authorities detect unauthorized drone behavior, prevent airspace violations, and ensure safe drone traffic management using real-time tracking, geofencing, and AI-based analytics.
+This project aims to improve drone surveillance, automate rule enforcement, and enhance aviation safety through smart monitoring technologies.
 
-Currently, two official plugins are available:
+##Features
+Real-Time Drone Tracking
+-Monitor drone location, speed, altitude, and movement continuously.
+Airspace Violation Detection
+-Detect drones entering restricted or no-fly zones.
+Geofencing System
+-Create virtual boundaries for authorized drone movement.
+Autonomous Monitoring
+-Automated detection and alert generation without human intervention.
+Instant Alert System
+-Notify authorities/admins about suspicious or illegal drone activities.
+Drone Traffic Visualization
+-Display active drones and routes on an interactive dashboard.
+Authentication & Access Control
+-Secure login system for administrators and operators.
+Violation Logging
+-Maintain records of detected violations for future analysis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+#Tech Stack
+##Frontend
+-HTML
+-CSS
+-JavaScript
+-React.js
+##Backend
+-Node.js
+-Express.js
+#Database
+-MongoDB / MySQL
+#Other Technologies
+-Google Maps API / Leaflet.js
+-Socket.IO (Real-Time Communication)
+-Machine Learning (Optional for prediction and anomaly detection)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+#System Architecture
+1) Drone sends live telemetry data.
+2)Backend processes incoming drone information.
+3)System checks:
+Flight path
+Altitude limits
+Restricted zones
+4)If a violation is detected:
+Alert is generated
+Violation is logged in the database
+5) Dashboard updates in real time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 259dee4 (Initial commit)
+
+#Modules
+-Drone Registration Module
+Register and manage drones.
+Assign drone IDs and operator details.
+-Flight Monitoring Module
+Track drone movement in real time.
+-Rule Violation Detection Module
+#Detect:
+Restricted zone entry
+Excess altitude
+Unauthorized flight routes
+Speed limit violations
+#Alert & Notification Module
+Send emergency alerts to admins/security teams.
+#Analytics Dashboard
+Visualize drone activity and violation statistics.
+
+#Future Enhancements
+AI-powered flight prediction
+Automatic drone interception
+Integration with government aviation APIs
+Weather-aware route optimization
+Facial/object recognition using drone cameras
+
+
+
+#Use Cases
+Smart Cities
+Defense and Military Surveillance
+Airport Airspace Monitoring
+Industrial Zone Protection
+Event Security Management
