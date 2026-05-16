@@ -99,7 +99,6 @@ Weather-aware route optimization
 Facial/object recognition using drone cameras
 
 
-
 #Use Cases
 Smart Cities
 Defense and Military Surveillance
